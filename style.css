@@ -8,26 +8,29 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow:0px 0px 3px 0px rgba(50, 50, 50, 0.75);
-    position: relative;
 }
 .images{
     display: flex;
     transition: all 0.3s;
 }
-.images > img{
-    width:100%;
+.buttonList{
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
 }
-
+.container{
+    position: relative;
+}
 .controls>button{
     display: inline-block;
-    margin: 0 90px;
+    margin: 0 77px;
     padding: 10px;
 
 }
 .buttonWrapper{
-    top:290px;
-    left:300px;
     position: absolute;
+    top:0;
+    left: 228px;
 }
 .buttonWrapper>button{
     display: inline-block;
