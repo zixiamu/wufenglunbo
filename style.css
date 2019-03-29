@@ -6,15 +6,33 @@
     height: 250px;
     margin:20px auto;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow:0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    position: relative;
 }
 .images{
-    position: relative;
+    display: flex;
+    transition: all 0.3s;
 }
 .images > img{
     width:100%;
-    transition: all 0.3s;
-    top:0;
-    position: absolute; 
+}
+
+.controls>button{
+    display: inline-block;
+    margin: 0 90px;
+    padding: 10px;
+
+}
+.buttonWrapper{
+    top:290px;
+    left:300px;
+    position: absolute;
+}
+.buttonWrapper>button{
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
 }
 /*.images> img:nth-child(1){
     position: absolute;
@@ -36,7 +54,7 @@
     top:0;
     left:100%
 }*/
-.images> img.current{
+/*.images> img.current{
     left: 0;
     transform:translateX(0);
     z-index: 1;
@@ -47,4 +65,4 @@
 }
 .images>img.enter{
     transform: translateX(100%);
-}
+}*/
